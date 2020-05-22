@@ -1,0 +1,102 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.PasswordField?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+
+
+
+
+    <padding><Insets top="40" right="40" bottom="40" left="40"/></padding>
+    <columnConstraints>
+        <ColumnConstraints minWidth="100" prefWidth="100"
+                           maxWidth="Infinity" halignment="RIGHT">
+        </ColumnConstraints>
+        <ColumnConstraints minWidth="200" prefWidth="200"
+                           maxWidth="Infinity" hgrow="ALWAYS">
+        </ColumnConstraints>
+    </columnConstraints>
+
+    <!-- Add Header Label -->
+    <Label text="Command" GridPane.columnIndex="0"
+           GridPane.rowIndex="0" GridPane.columnSpan="2"
+           GridPane.rowSpan="1" GridPane.halignment="CENTER" >
+        <font>
+            <Font name="Arial" size="24" ></Font>
+        </font>
+        <GridPane.margin>
+            <Insets top="20" right="0" bottom="20" left="20"></Insets>
+        </GridPane.margin>
+    </Label>
+
+
+
+
+    <Label  text="Input : " GridPane.columnIndex="0"
+           GridPane.rowIndex="1" >
+    </Label>
+    <TextField  fx:id="input" prefHeight="80"
+               GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+    <Label text="Output : " GridPane.columnIndex="0"
+           GridPane.rowIndex="2" >
+    </Label>
+    <TextField fx:id="output"  prefHeight="80"
+               GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+
+
+
+
+
+    <!-- Add Submit Button -->
+    <Button fx:id="writetotxt" text="Write to text"
+            prefWidth="100" prefHeight="40" defaultButton="true"
+            GridPane.columnIndex="0" GridPane.rowIndex="3"
+            GridPane.halignment="CENTER"
+            >
+        <GridPane.margin>
+            <Insets top="20" right="0" bottom="-20" left="0"></Insets>
+        </GridPane.margin>
+    </Button>
+    <Button fx:id="readfromtxt" text="Read from text"
+            prefWidth="100" prefHeight="40" defaultButton="true"
+            GridPane.columnIndex="1" GridPane.rowIndex="3"
+            GridPane.halignment="CENTER">
+        <GridPane.margin>
+            <Insets top="20" right="0" bottom="-20" left="0"></Insets>
+        </GridPane.margin>
+    </Button> <Button fx:id="multiplytable" text="Multiply table"
+                      prefWidth="100" prefHeight="40" defaultButton="true"
+                      GridPane.columnIndex="0" GridPane.rowIndex="4"
+                      GridPane.halignment="CENTER">
+    <GridPane.margin>
+        <Insets top="20" right="0" bottom="-20" left="0"></Insets>
+    </GridPane.margin>
+</Button>
+    <Button fx:id="addnewtable" text="Add new table"
+            prefWidth="100" prefHeight="40" defaultButton="true"
+            GridPane.columnIndex="1" GridPane.rowIndex="4"
+            GridPane.halignment="CENTER">
+        <GridPane.margin>
+            <Insets top="20" right="0" bottom="-20" left="0"></Insets>
+        </GridPane.margin>
+    </Button>
+    <Button fx:id="undo" text="Undo operation"
+            prefWidth="100" prefHeight="40" defaultButton="true"
+            GridPane.columnIndex="0" GridPane.rowIndex="5"
+            GridPane.halignment="CENTER">
+        <GridPane.margin>
+            <Insets top="20" right="0" bottom="-20" left="0"></Insets>
+        </GridPane.margin>
+    </Button>
+
+
+
+</GridPane>
